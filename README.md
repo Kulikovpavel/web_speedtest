@@ -92,3 +92,16 @@ Summary delay:
   Average:	0.3021 secs
   Requests/sec:	330.3580
 ```
+
+# short
+
+Short, with 5 gunicorn workers, on mac:
+
+21700r/sec for fastapi (gunicorn), 2600r/sec for flask (gunicorn)
+
+Almost 10x difference on single call time (0.003ms vs 0.03 ms, appr.), good internal optimization
+
+Much more Interesting with sleep(0.3) inside, sync and async versions, can be much faster for fastapi with additional call-producers (100 in my test):
+
+330.36r/sec for fastapi, 16.41r/sec for flask
+
