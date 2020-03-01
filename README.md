@@ -26,7 +26,7 @@ hey -z 5s -c 100 http://127.0.0.1:7575/delay
 
 # results
 
-##wsgi:
+## wsgi:
 
 ```
 Summary:
