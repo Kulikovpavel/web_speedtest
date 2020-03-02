@@ -13,7 +13,6 @@ def delay():
 
 @app.route("/simple")
 def simple():
-
     return "ok"
 
 
